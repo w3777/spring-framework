@@ -1,5 +1,8 @@
 pluginManagement {
 	repositories {
+		//添加镜像
+		maven{ url "https://maven.aliyun.com/nexus/content/groups/public/"}
+
 		mavenCentral()
 		gradlePluginPortal()
 		maven { url "https://repo.spring.io/release" }
@@ -55,3 +58,6 @@ settings.gradle.projectsLoaded {
 		}
 	}
 }
+//引入自己的模块
+include 'spring-mytest'
+
